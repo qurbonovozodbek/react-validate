@@ -56,7 +56,6 @@ span {
 input {
   outline: 1px solid none;
   padding: 16px;
-  border: 1px solid #ccc;
   border-radius: 15px;
 }
 form {

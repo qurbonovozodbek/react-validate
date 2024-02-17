@@ -87,7 +87,7 @@ function App() {
     e.preventDefault()
 
     if (validate(nameRef, emailRef, phoneRef, davlatRef)) {
-      console.log('salom');
+      alert("Muvoffaqiyatli o'tildi")
     }
   }
 
