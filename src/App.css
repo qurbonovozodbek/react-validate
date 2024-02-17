@@ -1,0 +1,142 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(216, 216, 255);
+  /* background: url(https://www.lffl.org/wp-content/uploads/2019/11/amazon-black-friday-1.jpg); */
+  /* background: url(https://www.prudentialuniforms.com/wp-content/uploads/2016/09/Logos-for-Companies.jpg); */
+  font-family: 'Poppins', sans-serif;
+}
+.container { 
+  width: 778px;
+  margin: 0 auto;
+  margin-top: 50px;
+  /* background: white; */
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.498), rgba(255, 0, 0, 0.128));
+  backdrop-filter: blur(10px);
+  padding: 30px 50px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.container h1 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.container .info-t {
+  font-size: 16px;
+  color: #B3B3B3;
+  margin-bottom: 40px;
+}
+.profil {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.profil h3 {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: #5361E4;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  font-size: 14px;
+}
+span {
+  color: red;
+}
+input {
+  outline: 1px solid none;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 35px;
+}
+.links{
+  margin-bottom: 40px;
+}
+.links p {
+  margin-bottom: 15px;
+}
+.cards {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+a {
+  padding: 22px 18px 12px 18px;
+  border-radius: 10px;
+  border: 2px solid gray;
+  transition: all 0.3s;
+}
+a:hover {
+  transition: 0.3s linear;
+  background: rgb(216, 216, 255);
+  box-shadow: inset 2px 2px 5px white;
+}
+a:active {
+  transition: 0.1s linear;
+  background: rgb(216, 216, 255);
+  box-shadow: inset 3px 3px 5px rgb(0, 0, 0, 0.4);
+}
+.btns {
+  display: flex;
+  justify-content: space-between;
+
+}
+.orqaga {
+  font-weight: 500;
+  padding: 18px 48px;
+  text-transform: uppercase;
+  border: none;
+  background: #F8F8F8 ;
+  border-radius: 10px;
+  transition: all 0.3s;
+  
+  font-style: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #6E6D77;
+}
+.keyingisi {
+  font-weight: 500;
+  padding: 18px 45px;
+  text-transform: uppercase;
+  border: none;
+  background: #F8F8F8 ;
+  border-radius: 10px;
+  transition: all 0.3s;
+  
+  font-style: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #6E6D77;
+}
+.keyingisi:hover {
+  transition: linear 0.3s;
+  cursor: pointer;
+  background: rgb(216, 216, 255);
+}
+.orqaga:hover {
+  transition: linear 0.3s;
+  background: rgb(216, 216, 255);
+  cursor: pointer;
+}
+.box p {
+  font-size: 12px;
+  font-weight: 400;
+}
