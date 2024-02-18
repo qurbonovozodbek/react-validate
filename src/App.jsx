@@ -8,6 +8,8 @@ import github from "./assets/github.svg";
 import instagram from "./assets/instagram.svg";
 import telegram from "./assets/telegram.svg";
 import vector from "./assets/Vector.svg";
+import logo from "./assets/Mask.png";
+import arrow from "./assets/arrow.svg";
 
 function App() {
   const nameRef = useRef('')
@@ -94,6 +96,24 @@ function App() {
 
   return (
     <>
+    <header className="head">
+      <img src={logo} alt="logo" />
+      <ul>
+        <li><a href="">Vakansiyalar</a></li>
+        <li><a href="">Kandidatlar</a></li>
+        <li><a href="">Kompaniyalar</a></li>
+        <li><a href="">Xizmatlar</a></li>
+        <li><a href="">Ta’lim</a></li>
+      </ul>
+      <div className="lang">
+        <div className="oz">
+          <span>O’zb</span>
+          <img src={arrow} alt="" />
+        </div>
+        <button>Boshlash</button>
+      </div>
+    </header>
+
       <div className="container">
         <h1>Kompaniya ma’lumotlari</h1>
         <p className="info-t">Kompaniya haqidagi ma’lumotlarni kiriting</p>
@@ -125,8 +145,8 @@ function App() {
           <div className="box">
             <label htmlFor="davlat">{" "}Davlat <span>*</span>{" "}</label>
             <input type="text" id="davlat" placeholder="Davlat" ref={davlatRef}/>
+            {error4 && <p style={{ color: 'red' }}>{error4}</p>}
           </div>
-          {error4 && <p style={{ color: 'red' }}>{error4}</p>}
         </form>
 
         <div className="links">
@@ -167,10 +187,37 @@ function App() {
 
           </div>
         </div>
+
+        <div className="inputs">
+
+          <div className="box">
+            <label htmlFor="davlat">{" "}Shahar <span>*</span>{" "}</label>
+            <input type="text" id="davlat" placeholder="Shahar"/>
+          </div>
+
+          <div className="box">
+            <label htmlFor="davlat">{" "}Yashash joyi <span>*</span>{" "}</label>
+            <input type="text" id="davlat" placeholder="Joy"/>
+          </div>
+
+          <div className="box">
+            <label htmlFor="davlat">{" "}Hodimlar soni <span>*</span>{" "}</label>
+            <input type="number" id="davlat" placeholder="Hodimlar soni"/>
+          </div>
+
+          <div className="box">
+            <label htmlFor="area">{" "}Davlat <span>*</span>{" "}</label>
+            <textarea name="area" id="area" cols="30" rows="10" placeholder="Kompaniya haqida izoh qoldiring"></textarea>
+          </div>
+          
+          
+        </div>
+
         <div className="btns">
           <button className="orqaga">Orqaga</button>
           <button onClick={handleClick} className="keyingisi">Keyingisi</button>
         </div>
+
 
       </div>
     </>
